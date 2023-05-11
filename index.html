@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexbox">
+        <div id="flexbox_time"></div>
+        <div id="flexbox_heading"><h1>Word Guessing Game</h1></div>
+        <div id="flexbox_guessCount"><p id="flexbox_guessCount_text"></p></div>
+        <div id="flexbox_guessWord"><h2 id="flexbox_guessWord_text"></h2></div>
+        <div id="flexbox_input"><input type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)" id="flexbox_input_box"></div>
+        <div id="flexbox_newGame"><button id="flexbox_newGame_button">New Game</button></div>
+        <div id="flexbox_guessedArea">
+            <div id="flexbox_guessedArea_guessedHeading"><h3>Guessed Charater:  <span>Green: True</span> Black: False</h3></div>
+            <div id="flexbox_guessedArea_guessedCh"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
